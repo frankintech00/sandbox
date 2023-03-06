@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+export const App = () => {
+	return (
+		<>
+			<div className='min-h-screen hero bg-base-200'>
+				<div className='text-center hero-content'>
+					<div className='max-w-md'>
+						<h1 className='text-5xl font-bold'>Hello there</h1>
+						<p className='py-6'>
+							Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+							excepturi exercitationem quasi. In deleniti eaque aut repudiandae
+							et a id nisi.
+						</p>
+						<button className='btn btn-primary'>Get Started</button>
+					</div>
+				</div>
+			</div>
+		</>
+	);
+};
